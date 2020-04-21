@@ -1,0 +1,4 @@
+wave
+numpy
+nmrglue
+matplotlib
