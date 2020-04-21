@@ -37,7 +37,7 @@ def read(directory):
     :param directory: where the files are expected.
     :return: data as x, y vectors.
     """
-    dic, data = ng.agilent.read(dir=directory)
+    dic, data = ng.varian.read(dir=directory)
     transposed_data = data.transpose()
 
     re = transposed_data.real
