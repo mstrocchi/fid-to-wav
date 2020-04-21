@@ -3,7 +3,8 @@
 from an NMR Spectrometer (Nuclear Magnetic Resonance) to an audible audio file. 
 The code accepts the standard Agilent/Varian fid and procpar files and can output both the XY-matrix as a .csv file or directly a 16-bit, 44.1kHz .wav audio file.
 
-!["Plot"](resources/images/plot.png)
+!["Plot 1"](resources/images/plot1.png)
+!["Plot 2"](resources/images/plot2.png)
 
 ## Usage
 
