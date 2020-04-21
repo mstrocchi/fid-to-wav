@@ -1,5 +1,7 @@
 # FID to .wav
-A Simple tool to convert Varian/Agilent FID files to wav.
+A Simple tool to convert Varian/Agilent FID files to both .wav and .csv.
+
+!["Plot"](resources/images/plot.png)
 
 ## Usage
 
@@ -19,13 +21,14 @@ A Simple tool to convert Varian/Agilent FID files to wav.
     ```bash
     $ pip install -r requirements.txt 
     ``` 
+5) Change the name of `DIR` variable at the top of `fid-to-wav.py` to the name of directory you just added.
 
-5) Make `fid-to-wav.py` executable.
+6) Make `fid-to-wav.py` executable.
     ```bash
     $ chmod +x fid-to-wav.py
     ```
 
-6) Run it.
+7) Run it.
     ```bash
     $ python fid-to-wav.py
     ```
