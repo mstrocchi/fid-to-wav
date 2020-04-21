@@ -5,7 +5,7 @@ import nmrglue as ng
 import matplotlib.pyplot as plt
 
 
-DIR_NAME = "FAM013_AHTM.PROTON_04.fid"
+DIR_NAME = "sucrose_1h"
 RESOURCES = "./resources/"
 OUTPUT = "./output/"
 FRAMERATE = 44100
@@ -42,8 +42,10 @@ def read(directory):
 
     re = transposed_data.real
     im = transposed_data.imag
-    converted_re = re.view(np.float32)
-    converted_im = im.view(np.float32)
+    converted_re = np.ascontiguousarray(re, dtype=np.float32)
+    converted_im = np.ascontiguousarray(im, dtype=np.float32)
+
+    np.ascontiguousarray(re, dtype=np.float32)
 
     y = (converted_re + converted_im)
     x = np.arange(0, y.size, 1)
