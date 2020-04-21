@@ -5,9 +5,9 @@ import nmrglue as ng
 import matplotlib.pyplot as plt
 
 
-DIR = "./resources/FAM013_AHTM.PROTON_04.fid"
-WAV_FILE_NAME = "./output/data.wav"
-CSV_FILE_NAME = "./output/data.csv"
+DIR_NAME = "FAM013_AHTM.PROTON_04.fid"
+RESOURCES = "./resources/"
+OUTPUT = "./output/"
 FRAMERATE = 44100
 
 
@@ -17,7 +17,7 @@ def data_to_csv(data):
     :param data: 1D vector.
     :return: void
     """
-    np.savetxt(CSV_FILE_NAME, data, delimiter=',')
+    np.savetxt(OUTPUT + DIR_NAME + ".csv", data, delimiter=',')
 
 
 def plot(x, y):
@@ -83,14 +83,14 @@ def write_wav(data, filename, framerate, amplitude):
 
 def main():
     # Get the data from file
-    times, data = read(DIR)
+    times, data = read("./resources/" + DIR_NAME)
 
     # Normalize data
     x = np.true_divide(times, np.max(np.abs(times)))
     y = np.true_divide(data, np.max(np.abs(data)))
 
     # Write .wav and plot curve
-    write_wav(y, WAV_FILE_NAME, FRAMERATE, 32700)
+    write_wav(y, OUTPUT + DIR_NAME + ".wav", FRAMERATE, 32700)
     data_to_csv(y)
     plot(x, y)
 
