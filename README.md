@@ -1,5 +1,7 @@
 # FID to .wav
-A Simple tool to convert Varian/Agilent FID files to both .wav and .csv.
+**Have you ever wanted to _hear_ molecules?** We created a simple tool to convert the outcoming signal 
+from an NMR Spectrometer (Nuclear Magnetic Resonance) to an audible audio file. 
+The code accepts the standard Agilent/Varian fid and procpar files and can output both the XY-matrix as a .csv file or directly a 16-bit, 44.1kHz .wav audio file.
 
 !["Plot"](resources/images/plot.png)
 
@@ -32,6 +34,11 @@ A Simple tool to convert Varian/Agilent FID files to both .wav and .csv.
     ```bash
     $ python fid-to-wav.py
     ```
-
-
+   
 #### You're done!
+
+
+## Authors
+
+- **Mattia Strocchi** [m.strocchi@student.tudelft.nl](mailto:m.strocchi@student.tudelft.nl) 
+- **Nicolò Tampellini** [nicolo.tampellini@studio.unibo.it](mailto:nicolo.tampellini@studio.unibo.it) 
