@@ -40,5 +40,5 @@ The code accepts the standard Agilent/Varian fid and procpar files and can outpu
 
 ## Authors
 
-- **Mattia Strocchi** [m.strocchi@student.tudelft.nl](mailto:m.strocchi@student.tudelft.nl) 
-- **Nicolò Tampellini** [nicolo.tampellini@studio.unibo.it](mailto:nicolo.tampellini@studio.unibo.it) 
+- **Mattia Strocchi** - [m.strocchi@student.tudelft.nl](mailto:m.strocchi@student.tudelft.nl) 
+- **Nicolò Tampellini** - [nicolo.tampellini@studio.unibo.it](mailto:nicolo.tampellini@studio.unibo.it) 
