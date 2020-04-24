@@ -5,7 +5,7 @@ import nmrglue as ng
 import matplotlib.pyplot as plt
 
 
-DIR_NAME = "sucrose_1h"
+DIR_NAME = "2-ketobutyric_acid"
 RESOURCES = "./resources/"
 OUTPUT = "./output/"
 FRAMERATE = 44100
