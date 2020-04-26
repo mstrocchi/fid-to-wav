@@ -34,7 +34,7 @@ def plot(x, y):
 def read(directory):
     """
     Reads the files in Directory
-    :param directory: where the files are expected.
+    :param directory: where the files are expected to be.
     :return: data as x, y vectors.
     """
     dic, data = ng.varian.read(dir=directory)
@@ -44,8 +44,6 @@ def read(directory):
     im = transposed_data.imag
     converted_re = np.ascontiguousarray(re, dtype=np.float32)
     converted_im = np.ascontiguousarray(im, dtype=np.float32)
-
-    np.ascontiguousarray(re, dtype=np.float32)
 
     y = (converted_re + converted_im)
     x = np.arange(0, y.size, 1)
