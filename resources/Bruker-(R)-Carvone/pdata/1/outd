@@ -1,0 +1,14 @@
+##TITLE= Parameter file, XWIN-NMR		Version 2.6
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##ORIGIN= UXNMR, Bruker Analytische Messtechnik GmbH
+##OWNER= root
+$$ Tue Jan  2 00:02:03 2001 CST (UT-6h)  abild@kerry
+$$ /u/exp/stan/nmr/par/standard1D///outd
+##$CURPLOT= <ps600_A_NFile>
+##$CURPRIN= <$File>
+##$DFORMAT= <normdp>
+##$LFORMAT= <normlp>
+##$PFORMAT= <normpl>
+##$SURQMSG= 1
+##END=
