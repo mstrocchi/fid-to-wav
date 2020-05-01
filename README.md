@@ -12,8 +12,7 @@
 
 
 Here is a simple tool to convert the Free Induction Decay (FID) signal coming from an Nuclear Magnetic Resonance (NMR) spectrometer to an audible file, so you can hear by yourself what your molecule is trying to tell you.
-**FID2WAV** is able to parse FID files produced by Agilent, Bruker or Varian machines! The output is a simple `sound.wav` 
-file. 
+**FID2WAV** is able to parse FID files produced by Agilent, Bruker or Varian machines! 
 
 ## Here are two sound samples of (fairly) similar molecules 
 
