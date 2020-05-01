@@ -7,16 +7,19 @@
 
 </div>
 
-**Have you ever wanted to _hear_ molecules?** Here is a simple tool to convert the signal 
-coming out from an Nuclear Magnetic Resonance (NMR) spectrometer to an audible file. 
-The tool accepts raw FID files produced by Agilent, Bruker or Varian machines and outputs a `sound.wav` 
-file associated to the molecule. 
+**Have you ever wanted to _hear_ molecules?** In Organic Chemistry, molecules are often so complex that their allure is hard to decode for the novice eye. So, how can we distill the fingerprint of a complex molecule into something easily understandable? Something that everybody from a kid to a Ph.D. in Chemistry would be able to understand? Music!
+
+
+
+Here is a simple tool to convert the Free Induction Decay (FID) signal coming from an Nuclear Magnetic Resonance (NMR) spectrometer to an audible file, so you can hear by yourself what your molecule is trying to tell you.
+**FID2WAV** is able to parse FID files produced by Agilent, Bruker or Varian machines! The output is a simple `sound.wav` 
+file. 
 
 ## Here are two sound samples of (fairly) similar molecules 
 
 | **(R)-Carvone** | **(-)-Menthol** |
 :------------:|:-----------:|
-[sound](https://soundcloud.com/user-821418598/r-carvone) | [sound](https://soundcloud.com/user-821418598/menthol) 
+[r-carvone.wav](https://soundcloud.com/user-821418598/r-carvone) | [menthol.wav](https://soundcloud.com/user-821418598/menthol) 
 ![](resources/images/carvone.png) | ![](resources/images/menthol.png)
 ![](resources/images/carvone-plot.png) | ![](resources/images/menthol-plot.png)
 
