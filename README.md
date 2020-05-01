@@ -7,13 +7,10 @@
 
 </div>
 
-Current version: 0.1.0 !["Download"]()
-
 **Have you ever wanted to _hear_ molecules?** Here is a simple tool to convert the signal 
 coming out from an Nuclear Magnetic Resonance (NMR) spectrometer to an audible file. 
 The tool accepts raw FID files produced by Agilent, Bruker or Varian machines and outputs a `sound.wav` 
 file associated to the molecule. 
-You can learn more about the project in the article: !["Have you ever wanted to hear molecules?"]()
 
 ![](resources/images/fid-2-wav.png)
 
