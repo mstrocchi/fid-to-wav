@@ -18,7 +18,7 @@ file associated to the molecule.
 
 | **(R)-Carvone** | **(-)-Menthol** |
 :------------:|:-----------:|
-![sound](https://soundcloud.com/user-821418598/r-carvone) | ![sound](https://soundcloud.com/user-821418598/menthol) 
+!["sound"](https://soundcloud.com/user-821418598/r-carvone) | !["sound"](https://soundcloud.com/user-821418598/menthol) 
 ![](resources/images/carvone.png) | ![](resources/images/menthol.png)
 ![](resources/images/carvone-plot.png) | ![](resources/images/menthol-plot.png)
 
