@@ -12,8 +12,6 @@ coming out from an Nuclear Magnetic Resonance (NMR) spectrometer to an audible f
 The tool accepts raw FID files produced by Agilent, Bruker or Varian machines and outputs a `sound.wav` 
 file associated to the molecule. 
 
-![](resources/images/fid-2-wav.png)
-
 ## Here are two sound samples of (fairly) similar molecules 
 
 | **(R)-Carvone** | **(-)-Menthol** |
