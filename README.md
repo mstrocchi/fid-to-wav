@@ -16,16 +16,16 @@ file associated to the molecule.
 
 | **(R)-Carvone** | **(-)-Menthol** |
 :------------:|:-----------:|
-!["sound"](https://soundcloud.com/user-821418598/r-carvone) | !["sound"](https://soundcloud.com/user-821418598/menthol) 
+[sound](https://soundcloud.com/user-821418598/r-carvone) | [sound](https://soundcloud.com/user-821418598/menthol) 
 ![](resources/images/carvone.png) | ![](resources/images/menthol.png)
 ![](resources/images/carvone-plot.png) | ![](resources/images/menthol-plot.png)
 
 
 ## Requirements
 
-The project uses !["Python 3"](https://www.python.org/downloads/).
-To run the project from sources you will need !["pip"](https://pip.pypa.io/en/stable/installing/) 
-and !["git"](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+The project uses ["Python 3"](https://www.python.org/downloads/).
+To run the project from sources you will need ["pip"](https://pip.pypa.io/en/stable/installing/) 
+and ["git"](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 ## Usage
 
