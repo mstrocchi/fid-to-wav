@@ -1,0 +1,42 @@
+
+Current Data Parameters
+NAME           cq_01139                
+EXPNO                 1                
+PROCNO                1                
+
+F2 - Acquisition Parameters
+Date_          20080324                
+Time               8.14                
+INSTRUM           spect                
+PROBHD     5mm TXO Z-gr                
+PULPROG            zgpr                
+TD                32768                
+SOLVENT           CDCl3                
+NS                    4                
+DS                    4                
+SWH            7002.801 Hz             
+FIDRES         0.213709 Hz             
+AQ            2.3396852 sec            
+RG                   32                
+DW               71.400 usec           
+DE                 6.00 usec           
+TE                300.0 K              
+D1           1.00000000 sec            
+D12          0.00002000 sec            
+D13          0.00000300 sec            
+
+============ CHANNEL f1 =============
+NUC1                 1H                
+P1                 8.95 usec           
+PL1                0.00 dB             
+PL9               54.00 dB             
+SFO1        499.8423497 MHz            
+
+F2 - Processing parameters
+SI                65536                
+SF          499.8400150 MHz            
+WDW                  EM                
+SSB                   0                
+LB                 1.00 Hz             
+GB                    0                
+PC                 1.00                

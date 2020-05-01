@@ -1,0 +1,23 @@
+##TITLE= Parameter file, XWIN-NMR		Version 2.6
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##ORIGIN= Bruker Analytik GmbH
+##OWNER= mfjofre
+$$ Mon Mar 24 07:14:13 2008 CST (UT-6h)  mfjofre@kerry
+$$ /u/data/mfjofre/nmr/cq_01139/1/scon
+##$BLKPA= (0..15)
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+##$BLKTR= (0..15)
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+##$DE1= 2
+##$DE2= -1
+##$DEADC= 3
+##$DEPA= 0.5
+##$DERX= 2
+##$PHASP4= (0..15)
+0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 
+##$PHASPR= (0..15)
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+##$SHAPPR= (0..15)
+1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 1.9 
+##END=

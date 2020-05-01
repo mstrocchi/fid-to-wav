@@ -1,0 +1,23 @@
+##TITLE= Parameter file, TOPSPIN		Version 1.3
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmrsu
+$$ 2007-06-04 16:28:41.938 -0600  nmrsu@granada
+$$ /opt/topspin/data/nmrsu/nmr/Met_Tool_2D_DB_Chl/157/scon
+##$BLKPA= (0..15)
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+##$BLKTR= (0..15)
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+##$DE1= 2
+##$DE2= 2
+##$DEADC= 4
+##$DEPA= 2
+##$DERX= 3
+##$PHASP4= (0..15)
+0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 
+##$PHASPR= (0..15)
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+##$SHAPPR= (0..15)
+1.6 1.6 1.6 1.6 1.6 1.6 1.6 1.6 1.6 1.6 1.6 1.6 1.6 1.6 1.6 1.6 
+##END=
