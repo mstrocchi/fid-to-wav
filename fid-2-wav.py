@@ -7,9 +7,7 @@ from tkinter import filedialog
 from tkinter import Tk
 from tkinter import ttk
 
-
 # Constants
-DARK_THEME_COLOR = '#3E4149'
 LIGHT_THEME_COLOR = '#E7E7E7'
 FRAMERATE = 8000
 
