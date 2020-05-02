@@ -29,7 +29,7 @@ The project uses [Python 3](https://www.python.org/downloads/).
 To run the project from sources you will need [pip](https://pip.pypa.io/en/stable/installing/) 
 and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-## Usage
+## Run from sources
 
 1) Open a shell window and clone the project.
     ```bash
@@ -55,6 +55,15 @@ and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
    
 #### You're all set!
 
+## App usage
+
+<img src="https://github.com/mstrocchi/fid-to-wav/blob/master/resources/images/fid-2-wav.png?raw=true" alt="FID2WAV" align="right" />
+
+1) In the program window, press `Select FID ` to specify the folder containing your FID file.
+2) Select the brand of the spectrometer that produced the FID file from the drop-down list.
+3) Press `Parse FID` to process the files.
+4) Everything is ready! Press `Generate wav` or `Plot` to see the signal.
+5) For every new FID you would like to process, repeat these steps.
 
 ## Authors
 
