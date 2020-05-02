@@ -57,7 +57,7 @@ and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 ## App usage
 
-<img src="https://github.com/mstrocchi/fid-to-wav/blob/update-readme/resources/images/fid-2-wav.png?raw=true" alt="FID2WAV" align="right" width="521" height="524" />
+<img src="https://github.com/mstrocchi/fid-to-wav/blob/update-readme/resources/images/fid-2-wav.png?raw=true" alt="FID2WAV" align="right" width="446" height="448" />
 
 1) In the program window, press `Select FID ` to specify the folder containing your FID file.
 2) Select the brand of the spectrometer that produced the FID file from the drop-down list.
