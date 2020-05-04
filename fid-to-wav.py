@@ -28,6 +28,7 @@ def load_path():
     global path_to_directory
     path_to_directory = filedialog.askdirectory()
     # Check that directory was set
+
     if path_to_directory == '':
         print("Directory was not specified!")
     else:
@@ -38,13 +39,14 @@ def write_wav():
     """
     Writes the .wav file.
     This is a callback function.
-    :param data: to be written.
-    :param filename: to be written.
-    :param framerate: wav conversion parameter.
-    :param amplitude: wav conversion parameter.
-    :return:
+    :return: void
     """
     global data
+
+    if len(data) == 0:
+        print("Before writing a wav you need to parse a file.")
+        return
+
     file_path = (path_to_directory + '/' + FILE_NAME)
     file_wav = wave.open(file_path, "w")
     number_of_channels = 1
@@ -73,9 +75,11 @@ def plot():
     :return: void
     """
     global data
-    if data.size == 0:
-        print("Load FID file first!")
+
+    if len(data) == 0:
+        print("Before plotting you need to parse a file.")
         return
+
     times = np.arange(0, data.size, 1)
     x = np.true_divide(times, np.max(np.abs(times)))
     plt.plot(x, data, 'ko', color="blue", markersize=1)
@@ -102,9 +106,13 @@ def parse():
     global data
     producer = machine_producer.get()
 
-    if producer == '':
-        print("Please, specify a producer before parsing.")
+    if path_to_directory == '':
+        print("You have to specify the FID file directory before parsing.")
         return
+    if producer == '':
+        print("You have to specify a producer before parsing.")
+        return
+
     try:
         # Parse file according to machine producer
         dic, data = parse_file(producer)()
