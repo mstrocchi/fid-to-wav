@@ -50,7 +50,7 @@ and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 5) Run it with Python 3.
     ```bash
-    $ python fid-2-wav.py
+    $ python3 fid-to-wav.py
     ```
    
 #### You're all set!
