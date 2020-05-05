@@ -24,8 +24,8 @@ def load_path():
     """
     global path_to_directory
     path_to_directory = filedialog.askdirectory()
-    # Check that directory was set
 
+    # Check that directory was set
     if path_to_directory == '':
         print("Directory was not specified!")
     else:
