@@ -41,14 +41,12 @@ and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
     $ cd fid-to-wav
     ``` 
 
-3) Put the directory containing your FID raw files into `/resources`.
-
-4) Install the required packages.
+3) Install the required packages.
     ```bash
     $ pip install -r requirements.txt 
     ``` 
 
-5) Run it with Python 3.
+4) Run it with Python 3.
     ```bash
     $ python3 fid-to-wav.py
     ```

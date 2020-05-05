@@ -3,10 +3,7 @@ import struct
 import numpy as np
 import nmrglue as ng
 import matplotlib.pyplot as plt
-from tkinter import filedialog
-from tkinter import Tk
-from tkinter import ttk
-from tkinter import TOP
+from tkinter import filedialog, Tk, ttk, TOP
 
 # Constants - global settings
 LIGHT_THEME_COLOR = '#E7E7E7'
@@ -22,13 +19,12 @@ data = []
 def load_path():
     """
     Loads the path to the FID raw files directory.
-    This is a callback function.
-    :return: void
+    Callback function.
     """
     global path_to_directory
     path_to_directory = filedialog.askdirectory()
-    # Check that directory was set
 
+    # Check that directory was set
     if path_to_directory == '':
         print("Directory was not specified!")
     else:
@@ -38,8 +34,7 @@ def load_path():
 def write_wav():
     """
     Writes the .wav file.
-    This is a callback function.
-    :return: void
+    Callback function.
     """
     global data
 
@@ -70,9 +65,8 @@ def write_wav():
 
 def plot():
     """
-    Plots a graph given the y vector.
-    This is a callback function.
-    :return: void
+    Plots a graph given the data vector.
+    Callback function.
     """
     global data
 
@@ -91,7 +85,7 @@ def parse_file(producer):
     """
     Given a producer name, return appropriate parse function.
     :param producer: NMR machine producer.
-    :return: function that reads file.
+    :return: lambda function that reads file according to producer.
     """
     global path_to_directory
     print("Parsing using producer: " + producer)
