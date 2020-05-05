@@ -19,8 +19,7 @@ data = []
 def load_path():
     """
     Loads the path to the FID raw files directory.
-    This is a callback function.
-    :return: void
+    Callback function.
     """
     global path_to_directory
     path_to_directory = filedialog.askdirectory()
@@ -35,8 +34,7 @@ def load_path():
 def write_wav():
     """
     Writes the .wav file.
-    This is a callback function.
-    :return: void
+    Callback function.
     """
     global data
 
@@ -67,9 +65,8 @@ def write_wav():
 
 def plot():
     """
-    Plots a graph given the y vector.
-    This is a callback function.
-    :return: void
+    Plots a graph given the data vector.
+    Callback function.
     """
     global data
 
@@ -88,7 +85,7 @@ def parse_file(producer):
     """
     Given a producer name, return appropriate parse function.
     :param producer: NMR machine producer.
-    :return: function that reads file.
+    :return: lambda function that reads file according to producer.
     """
     global path_to_directory
     print("Parsing using producer: " + producer)
