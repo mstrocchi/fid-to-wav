@@ -3,10 +3,7 @@ import struct
 import numpy as np
 import nmrglue as ng
 import matplotlib.pyplot as plt
-from tkinter import filedialog
-from tkinter import Tk
-from tkinter import ttk
-from tkinter import TOP
+from tkinter import filedialog, Tk, ttk, TOP
 
 # Constants - global settings
 LIGHT_THEME_COLOR = '#E7E7E7'
