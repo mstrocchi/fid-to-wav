@@ -3,7 +3,7 @@ import struct
 import numpy as np
 import nmrglue as ng
 import matplotlib.pyplot as plt
-from tkinter import filedialog, Tk, ttk, TOP
+from tkinter import filedialog, Tk, ttk, TOP, messagebox
 
 # Constants - global settings
 LIGHT_THEME_COLOR = '#E7E7E7'
@@ -26,9 +26,9 @@ def load_path():
 
     # Check that directory was set
     if path_to_directory == '':
-        print("Directory was not specified!")
+        messagebox.showerror("Error", "Directory was not specified!")
     else:
-        print("Selected path: " + path_to_directory)
+        messagebox.showinfo("Info", "Selected path to FID: " + path_to_directory)
 
 
 def write_wav():
@@ -39,7 +39,7 @@ def write_wav():
     global data
 
     if len(data) == 0:
-        print("Before writing a wav you need to parse a file.")
+        messagebox.showerror("Error", "Before writing a wav you need to parse a file.")
         return
 
     file_path = (path_to_directory + '/' + FILE_NAME)
@@ -55,12 +55,10 @@ def write_wav():
                         number_of_frames,
                         compression_type,
                         compression_name))
-
-    print("Writing .wav file...")
     for value in data:
         file_wav.writeframes(struct.pack('i', int(value * AMPLITUDE)))
     file_wav.close()
-    print("Done!")
+    messagebox.showinfo("Info", "Writing .wav done!")
 
 
 def plot():
@@ -71,14 +69,13 @@ def plot():
     global data
 
     if len(data) == 0:
-        print("Before plotting you need to parse a file.")
+        messagebox.showerror("Error", "Before plotting you need to parse a file.")
         return
 
     times = np.arange(0, data.size, 1)
     x = np.true_divide(times, np.max(np.abs(times)))
     plt.plot(x, data, 'ko', color="blue", markersize=1)
     plt.show()
-    print("Plot is ready!")
 
 
 def parse_file(producer):
@@ -88,7 +85,6 @@ def parse_file(producer):
     :return: lambda function that reads file according to producer.
     """
     global path_to_directory
-    print("Parsing using producer: " + producer)
     return {
         "Agilent": (lambda: ng.agilent.read(dir=path_to_directory)),
         "Bruker": (lambda: ng.bruker.read(dir=path_to_directory)),
@@ -101,17 +97,18 @@ def parse():
     producer = machine_producer.get()
 
     if path_to_directory == '':
-        print("You have to specify the FID file directory before parsing.")
+        messagebox.showerror("Error", "You have to specify the FID file directory before parsing.")
         return
     if producer == '':
-        print("You have to specify a producer before parsing.")
+        messagebox.showerror("Error", "You have to specify a producer before parsing.")
         return
 
     try:
         # Parse file according to machine producer
         dic, data = parse_file(producer)()
     except (FileNotFoundError, AttributeError):
-        print("Your FID files do not match the producer specified. Try with a different producer.")
+        messagebox.showerror("Error", "Your FID files do not match the producer specified. " +
+                                      "Try with a different producer.")
         # clear the data
         data = []
         return
@@ -124,6 +121,7 @@ def parse():
 
     # Normalize data
     data = np.true_divide(data, np.max(np.abs(data)))
+    messagebox.showinfo("Info", "Parsing FID file done!")
 
 
 # GUI
