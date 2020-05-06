@@ -7,7 +7,7 @@
 
 </div>
 
-Current version: v0.1.0 
+Current version: v1.0.0 
 
 **Have you ever wanted to _hear_ molecules?** In Organic Chemistry, molecules are often so complex that their allure is hard to decode for the novice eye. So, how can we distill the fingerprint of a complex molecule into something easily understandable? Something that everybody from a kid to a Ph.D. in Chemistry would be able to understand? Music!
 
