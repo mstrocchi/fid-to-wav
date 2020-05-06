@@ -7,9 +7,9 @@
 
 </div>
 
+Current version: v1.0.0 
+
 **Have you ever wanted to _hear_ molecules?** In Organic Chemistry, molecules are often so complex that their allure is hard to decode for the novice eye. So, how can we distill the fingerprint of a complex molecule into something easily understandable? Something that everybody from a kid to a Ph.D. in Chemistry would be able to understand? Music!
-
-
 
 Here is a simple tool to convert the Free Induction Decay (FID) signal coming from an Nuclear Magnetic Resonance (NMR) spectrometer to an audible file, so you can hear by yourself what your molecule is trying to tell you.
 **FID2WAV** is able to parse FID files produced by Agilent, Bruker or Varian machines! 
